@@ -15,13 +15,16 @@ This repository serves as a **template** for bootstrapping new mobile and web ap
 1. **Use this template:** click **Use this template** on GitHub to create a new repository from it (or clone this repo if working locally).
 2. **Run scaffold script:** execute `scripts/scaffold.sh` (or `copier copy`) and answer the prompts (project name, bundle ID, database, etc.).  This will generate a new project folder with your custom values.
 3. **Install dependencies:**
+
    ```bash
    # Install JavaScript packages
    pnpm -r install
    # Install Python dependencies for the API service
    uv sync --project services/api
    ```
+
 4. **Start development:**
+
    ```bash
    # Mobile app
    pnpm --filter "./apps/mobile" start
